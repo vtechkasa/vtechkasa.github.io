@@ -184,7 +184,7 @@ nav a:hover {
 .contacts-list {-webkit-animation-delay: 0.35s;-moz-animation-delay: 0.35s;animation-delay: 0.35s;}
 
 .navbar-toggle {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   width: 40px;
