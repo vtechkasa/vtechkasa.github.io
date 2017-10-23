@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>VTech KASA</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-route.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+        <script src="jquery-3.2.1.min.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+       
+        
+    </head>
+    <body ng-app="kasaApp">
+        
+        <!--Navigation bar hamburger-->
+        <div class='navbar-toggle' title='Menu'>
+          <div class="bar1"></div>
+          <div class="bar2"></div>
+          <div class="bar3"></div>
+        </div>
+        <nav class="nav-hide">
+          <ul>
+            <li class="home-list fade-in"><a href="#/" class="slide-section" onclick=scrollFunction()>Home</a></li>
+            <li class="about-list fade-in"><a href="#/about" class="slide-section" onclick=scrollFunction()>About Us</a></li>
+            <li class="officers-list fade-in"><a href="#/officers" class="slide-section" onclick=scrollFunction()>Officer</a></li>
+            <li class="gallery-list fade-in"><a href="#/gallery" class="slide-section" onclick=scrollFunction()>Gallery</a></li>
+            <li class="events-list fade-in"><a href="#/events" class="slide-section" onclick=scrollFunction()>Events</a></li>
+            <li class="contacts-list fade-in"><a href="#/contacts" class="slide-section" onclick=scrollFunction()>Contact Us</a></li>
+          </ul>
+        </nav>
+        
+        <!--LOGO Picture-->
+        <div id="logo" >
+            <div class="one"><img class="cdprlogo" id="cdpr" src="img/kasalogo.png" width="35%" height="10%"/></div>
+        </div>
+      
+        <!--Navigation bar-->
+        <style type="text/css">
+            .slide-section1{-webkit-animation-duration: .5s;}
+            .slide-section2{-webkit-animation-duration: 1s;}
+            .slide-section3{-webkit-animation-duration: 1.5s;}
+            .slide-section4{-webkit-animation-duration: 2s;}
+            .slide-section5{-webkit-animation-duration: 2.5s;}
+            .slide-section6{-webkit-animation-duration: 3s;}
+        </style>
+        
+        <div id="menu" class="topnav">
+            <a href="#/" class="slide-section1" onclick=scrollFunction()>Home</a>
+            <a href="#/about" class="slide-section2" onclick=scrollFunction()>About</a>
+            <a href="#/officers" class="slide-section3" onclick=scrollFunction()>Officers</a>
+            <a href="#/gallery" class="slide-section4" onclick=scrollFunction()>Gallery</a>
+            <a href="#/events" class="slide-section5" onclick=scrollFunction()>Events</a>
+            <a href="#/contacts" class="slide-section6" onclick=scrollFunction()>Contact Us</a>
+        </div>
+        
+        <!--Dummy navigation bar-->
+        <div class="dummynav"></div>
+        
+		<!-- AngularJS view -->
+        <div ng-view class="mainview-animation"></div>
+       
+    </body>
+    <!--<script src="main.js"></script>-->
+</html>
